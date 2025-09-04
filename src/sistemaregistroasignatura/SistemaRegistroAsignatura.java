@@ -47,6 +47,22 @@ public class SistemaRegistroAsignatura {
                     System.out.println("Estudiante ingresado con éxito");
                     
                 case 2:
+                    //considerar rut, nro_docente, nombre, fecha de ingreso y sede en la que trabaja (Se considera que puede impartir clases solo en una sede). De la Sede, se interesa almacenar el nro único de la sede, su nombre y comuna
+                    System.out.print("-- INGRESO DE DOCENTE --");
+                    System.out.println("Ingrese RUT del docente: ");
+                    numero = leer.nextInt();
+                    
+                    System.out.print("Ingrese numero del docente: ");
+                    numero = leer.nextInt();
+                    
+                    System.out.print("Ingrese nombre del docente: ");
+                    ingresar = leer.next();
+                    
+                    System.out.print("Ingrese fecha de ingreso (AAAA-MM-DD): ");
+                    ingresar = leer.next();
+                    
+                    System.out.println("Ingrese sede en la que trabaja: ");
+                    ingresar = leer.next();
 
                     
                 case 3:
