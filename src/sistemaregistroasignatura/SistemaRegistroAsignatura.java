@@ -104,6 +104,8 @@ public class SistemaRegistroAsignatura {
                 case 4: 
                     //llamar metodo
                     System.out.println("Nota de presentacion de estudiante: ");
+
+                    System.out.pritnln("Ingrese la nota final del estudiante: ");
                     
                 case 5:
                     Sytem.out.println("Saliendo del sistema...");
