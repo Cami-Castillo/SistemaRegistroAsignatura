@@ -47,6 +47,8 @@ public class SistemaRegistroAsignatura {
                     System.out.println("Estudiante ingresado con éxito");
                     
                 case 2:
+
+                    
                 case 3:
                 case 4: 
                 case 5:
