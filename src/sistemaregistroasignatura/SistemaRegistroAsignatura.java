@@ -14,7 +14,7 @@ public class SistemaRegistroAsignatura {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner leer = new Scanner(System.in);
-        String opcion;
+        int opcion;
         int numero;
 
         do{
@@ -23,7 +23,10 @@ public class SistemaRegistroAsignatura {
             System.out.println("------------------------");
             System.out.println("1.- Ingresar Estudiante ");
             System.out.println("2.- Ingresar Docente");
-            System.out.println("3.-");
+            System.out.println("3.- Ingresar Asignatura");
+            System.out.println("4.- Calcular Resultados");
+            System.out.println("5.- Salir");
+            opcion = leer.Sca
         
     }
     
