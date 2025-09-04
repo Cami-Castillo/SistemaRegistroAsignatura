@@ -22,6 +22,11 @@ public class SistemaRegistroAsignatura {
         Estudiante alumno = new Estudiante();
         Estudiante alumno1 = new Estudiante();
 
+        //Docente(String nombreDocente, int rut, int nroDocente, String fechaIngreso)
+
+        Docente profesor = new Docente();
+        Docente profesor1 = new Docente();
+
         
 
         do{
