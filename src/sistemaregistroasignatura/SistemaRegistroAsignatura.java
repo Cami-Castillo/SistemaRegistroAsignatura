@@ -92,8 +92,8 @@ public class SistemaRegistroAsignatura {
 
                     
                 case 4: 
-
-                    System.out.println("");
+                    //llamar metodo
+                    System.out.println("Nota de presentacion de estudiante: ");
                     
                 case 5:
                     Sytem.out.println("Saliendo del sistema...");
