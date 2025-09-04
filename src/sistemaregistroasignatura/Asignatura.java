@@ -78,9 +78,23 @@ public class Asignatura {
   }
 
   // Metodos de la clase
+  
   public double notaPresentacion(){
-    double notaPre = nota1*0.3 + nota2*0.3 + nota3*0.4;
-    return notaPre;
+      double notaPre = nota1*0.3 + nota2*0.3 + nota3*0.4;
+      return notaPre;
+  }
       
+  public boolean eximido(){
+     return notaPresentacion() >= 5.0;
+  }
+  
+  public double notaFinal(double notaExamen){
+      double notaFin = notaPresentacion()*0.6 + notaExamen*0.4;
+      return notaFin;
+  }
+  
+  public boolean aprobado(){
+     return notaFinal(notaExamen) >= 4.0;
+  }
 
 }
