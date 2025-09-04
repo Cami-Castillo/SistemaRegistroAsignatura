@@ -68,6 +68,25 @@ public class SistemaRegistroAsignatura {
 
                     
                 case 3:
+
+                    System.out.print("-- INGRESO DE ASIGNATURA --");
+                    System.out.println("Ingrese el codigo unico de la asignatura: ");
+                    numero = leer.nextInt();
+                    
+                    System.out.print("Ingrese nombre de la asignatura: ");
+                    ingresar = leer.next();
+                    
+                    System.out.print("Ingrese nombre del estudiante: ");
+                    ingresar = leer.next();
+                    //VALIDACION?
+                    
+                    System.out.print("Docente que imparte la asignatura: ");
+                    ingresar = leer.next();
+                    
+                    System.out.println("Ingrese sede en la que trabaja: ");
+                    ingresar = leer.next();
+
+                    
                 case 4: 
                 case 5:
                 default:
