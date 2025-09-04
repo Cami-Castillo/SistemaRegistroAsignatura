@@ -1,3 +1,4 @@
+package sistemaregistroasignatura;
 public class Docente {
   private String nombreDocente;
   private int rut;
