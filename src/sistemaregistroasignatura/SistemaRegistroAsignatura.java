@@ -16,6 +16,7 @@ public class SistemaRegistroAsignatura {
         Scanner leer = new Scanner(System.in);
         int opcion;
         int numero;
+        String ingresar;
 
         //Estudiante(String rut, String nombre, int edad, String fechaNacimiento)
 
@@ -26,6 +27,10 @@ public class SistemaRegistroAsignatura {
 
         Docente profesor = new Docente();
         Docente profesor1 = new Docente();
+
+        //Asignatura(String nombreAsignatura, int codigo, String nombreEstudiante, String nombreProfesor, double nota1, double nota2, double nota3)
+
+        Asignatura 
 
         
 
