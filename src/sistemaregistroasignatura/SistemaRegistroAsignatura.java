@@ -30,10 +30,11 @@ public class SistemaRegistroAsignatura {
 
             switch(opcion){
                 case 1:
+                    //Falta objeto Estudiante?
                     System.out.print("-- INGRESO DE ESTUDIANTE --");
                     System.out.println("Ingrese RUT del estudiante: ");
                     numero = leer.nextInt();
-                    //Falta alumno
+                    
                     System.out.print("Ingrese nombre del estudiante");
                     ingresar = leer.next();
                     
