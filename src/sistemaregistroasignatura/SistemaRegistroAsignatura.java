@@ -64,6 +64,8 @@ public class SistemaRegistroAsignatura {
                     System.out.println("Ingrese sede en la que trabaja: ");
                     ingresar = leer.next();
 
+                    //se interesa almacenar el nro único de la sede, su nombre y comuna
+
                     
                 case 3:
                 case 4: 
