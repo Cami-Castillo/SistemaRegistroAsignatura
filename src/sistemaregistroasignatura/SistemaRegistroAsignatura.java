@@ -34,6 +34,8 @@ public class SistemaRegistroAsignatura {
                     System.out.print("-- INGRESO DE ESTUDIANTE --");
                     System.out.println("Ingrese RUT del estudiante: ");
                     numero = leer.nextInt();
+
+                    //VALIDAR QUE NOMBRE NO ESTË VACIO
                     
                     System.out.print("Ingrese nombre del estudiante");
                     ingresar = leer.next();
@@ -52,6 +54,8 @@ public class SistemaRegistroAsignatura {
                     System.out.println("Ingrese RUT del docente: ");
                     numero = leer.nextInt();
                     
+                    //VALIDAR QUE NOMBRE NO ESTË VACIO
+                    
                     System.out.print("Ingrese numero del docente: ");
                     numero = leer.nextInt();
                     
@@ -60,6 +64,7 @@ public class SistemaRegistroAsignatura {
                     
                     System.out.print("Ingrese fecha de ingreso (AAAA-MM-DD): ");
                     ingresar = leer.next();
+                    //La fecha de ingreso del docente no puede ser posterior a hoy.
                     
                     System.out.println("Ingrese sede en la que trabaja: ");
                     ingresar = leer.next();
