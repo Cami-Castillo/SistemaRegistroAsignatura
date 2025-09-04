@@ -92,8 +92,13 @@ public class SistemaRegistroAsignatura {
 
                     
                 case 4: 
+
+                    System.out.println("");
+                    
                 case 5:
+                    Sytem.out.println("Saliendo del sistema...");
                 default:
+                    System.out.println("Error: Ingrese una opción válida.");
                     
 
                     
