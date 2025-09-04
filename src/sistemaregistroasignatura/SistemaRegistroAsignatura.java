@@ -91,7 +91,12 @@ public class SistemaRegistroAsignatura {
                     System.out.println("Ingrese sede en la que trabaja: ");
                     ingresar = leer.next();
 
-                    //AGREGAR FOR?
+                    System.out.print("Ingrese nota 1: ")
+                    numero = leer.nextDouble();  
+                     System.out.print("Ingrese nota 2: ")
+                    numero = leer.nextDouble();    
+                     System.out.print("Ingrese nota 3: ")
+                    numero = leer.nextDouble();    
 
                     
 
