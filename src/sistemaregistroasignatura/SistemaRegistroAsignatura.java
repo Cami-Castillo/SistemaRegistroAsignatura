@@ -17,6 +17,7 @@ public class SistemaRegistroAsignatura {
         int opcion;
         int numero;
         String ingresar;
+        double nota;
 
         //Estudiante(String rut, String nombre, int edad, String fechaNacimiento)
 
@@ -110,11 +111,11 @@ public class SistemaRegistroAsignatura {
                     ingresar = leer.next();
 
                     System.out.print("Ingrese nota 1: ");
-                    numero = leer.nextDouble();  
+                    nota = leer.nextDouble();  
                      System.out.print("Ingrese nota 2: ");
-                    numero = leer.nextDouble();    
+                    nota = leer.nextDouble();    
                      System.out.print("Ingrese nota 3: ");
-                    numero = leer.nextDouble();    
+                    nota = leer.nextDouble();    
 
                     
 
