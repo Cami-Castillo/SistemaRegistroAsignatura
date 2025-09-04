@@ -26,8 +26,19 @@ public class SistemaRegistroAsignatura {
             System.out.println("3.- Ingresar Asignatura");
             System.out.println("4.- Calcular Resultados");
             System.out.println("5.- Salir");
-            opcion = leer.Sca
+            opcion = leer.nextInt();
+
+            switch(opcion){
+                case 1:
+                case 2:
+                case 3:
+                case 4: 
+                case 5:
+                default:
+                    
+
+                    
         
     }
     
-}
+}while(opcion !=5);
