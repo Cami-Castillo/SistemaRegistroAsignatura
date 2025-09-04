@@ -30,6 +30,11 @@ public class SistemaRegistroAsignatura {
 
             switch(opcion){
                 case 1:
+                    System.out.print("-- INGRESO DE ESTUDIANTE --");
+                    System.out.println("Ingrese RUT del estudiante: ");
+                    numero = leer.nextInt();
+                    //Falta 
+                    
                 case 2:
                 case 3:
                 case 4: 
