@@ -33,7 +33,17 @@ public class SistemaRegistroAsignatura {
                     System.out.print("-- INGRESO DE ESTUDIANTE --");
                     System.out.println("Ingrese RUT del estudiante: ");
                     numero = leer.nextInt();
-                    //Falta 
+                    //Falta alumno
+                    System.out.print("Ingrese nombre del estudiante");
+                    ingresar = leer.next();
+                    
+                    System.out.print("Ingrese edad del estudiante: ");
+                    numero = leer.nextInt();
+                    
+                    System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
+                    ingresar = leer.next();
+                    
+                    System.out.println("Estudiante ingresado con éxito");
                     
                 case 2:
                 case 3:
