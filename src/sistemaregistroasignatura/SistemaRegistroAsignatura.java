@@ -18,8 +18,12 @@ public class SistemaRegistroAsignatura {
         int numero;
 
         do{
-            System.out.print("---------------------")
+            System.out.println("------------------------")
             System.out.println(" SISTEMA DE REGISTRO");
+            System.out.println("------------------------");
+            System.out.println("1.- Ingresar Estudiante ");
+            System.out.println("2.- Ingresar Docente");
+            System.out.println("3.-");
         
     }
     
