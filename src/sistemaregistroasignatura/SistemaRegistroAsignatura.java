@@ -86,6 +86,10 @@ public class SistemaRegistroAsignatura {
                     System.out.println("Ingrese sede en la que trabaja: ");
                     ingresar = leer.next();
 
+                    //AGREGAR FOR?
+
+                    
+
                     
                 case 4: 
                 case 5:
