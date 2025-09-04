@@ -78,6 +78,9 @@ public class Asignatura {
   }
 
   // Metodos de la clase
-  
+  public double notaPresentacion(){
+    double notaPre = nota1*0.3 + nota2*0.3 + nota3*0.4;
+    return notaPre;
+      
 
 }
