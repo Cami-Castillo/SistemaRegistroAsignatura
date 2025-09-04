@@ -17,6 +17,13 @@ public class SistemaRegistroAsignatura {
         int opcion;
         int numero;
 
+        //Estudiante(String rut, String nombre, int edad, String fechaNacimiento)
+
+        Estudiante alumno = new Estudiante();
+        Estudiante alumno1 = new Estudiante();
+
+        
+
         do{
             System.out.println("------------------------")
             System.out.println(" SISTEMA DE REGISTRO");
