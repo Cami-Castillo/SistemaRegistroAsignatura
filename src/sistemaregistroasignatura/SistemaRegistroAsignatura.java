@@ -30,7 +30,8 @@ public class SistemaRegistroAsignatura {
 
         //Asignatura(String nombreAsignatura, int codigo, String nombreEstudiante, String nombreProfesor, double nota1, double nota2, double nota3)
 
-        Asignatura 
+        Asignatura asig = new Asignatura();
+        Asignatura asig1 = new Asignatura();
 
         
 
