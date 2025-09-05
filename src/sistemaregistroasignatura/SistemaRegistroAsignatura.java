@@ -149,22 +149,18 @@ public class SistemaRegistroAsignatura {
 
         System.out.print("Ingrese nota 1: ");
         nota = leer.nextDouble();
-        //leer.nextLine(); // limpiar buffer
         asig1.setNota1(nota);
 
         System.out.print("Ingrese nota 2: ");
         nota = leer.nextDouble();
-        //leer.nextLine(); // limpiar buffer
         asig1.setNota2(nota);
 
         System.out.print("Ingrese nota 3: ");
         nota = leer.nextDouble();
-        //leer.nextLine(); // limpiar buffer
         asig1.setNota3(nota);
 
         System.out.print("Ingrese nota examen: ");
         nota = leer.nextDouble();
-        //leer.nextLine(); // limpiar buffer
         asig1.setNotaExamen(nota);
 
         break;
