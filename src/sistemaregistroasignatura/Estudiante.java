@@ -1,9 +1,5 @@
 package sistemaregistroasignatura;
 
-/**
- *
- * @author aleja
- */
 public class Estudiante {
     //Atributos
     private String rut;
