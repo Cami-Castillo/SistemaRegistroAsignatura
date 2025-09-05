@@ -2,7 +2,7 @@ package sistemaregistroasignatura;
 
 public class Docente {
   private String nombreDocente;
-  private int rut;
+  private String rut;
   private int nroDocente;
   private String fechaIngreso;
   private String sede; // no se si sera tipo String o tipo Sede
