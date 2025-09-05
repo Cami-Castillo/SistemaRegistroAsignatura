@@ -64,9 +64,9 @@ public class SistemaRegistroAsignatura {
                     System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
                     String fecha = leer.nextLine();
                     estudiante1.setFechaNacimiento(fecha);
-                    System.out.print("------------------------------------");
+                    System.out.println("------------------------------------");
                     System.out.println("Estudiante ingresado con éxito");
-                    System.out.print("------------------------------------");
+                    System.out.println("------------------------------------");
                     System.out.print("RUT: "+estudiante1.getRut());
                     System.out.print("Nombre: "+estudiante1.getNombre());
                     System.out.print("Edad: "+estudiante1.getEdad());
