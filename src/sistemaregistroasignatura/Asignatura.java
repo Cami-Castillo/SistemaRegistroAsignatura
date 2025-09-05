@@ -7,11 +7,13 @@ public class Asignatura {
   private double nota1;
   private double nota2;
   private double nota3;
+  private double notaExamen;
 
   // Constructor
 
-  public Asignatura() {
+    public Asignatura() {
     }
+  
   
   public Asignatura(String nombreAsignatura, int codigo, String nombreEstudiante, String nombreProfesor, double nota1, double nota2, double nota3) {
     this.nombreAsignatura = nombreAsignatura;
