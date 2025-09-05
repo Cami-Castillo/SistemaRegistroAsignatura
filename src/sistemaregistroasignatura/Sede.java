@@ -11,6 +11,10 @@ public class Sede {
     private String comuna;
     
     //Constructor con parametros
+
+    public Sede() {
+    }
+    
     public Sede(String nroSede, String nombre, String comuna) {
         this.nroSede = nroSede;
         this.nombre = nombre;
