@@ -12,10 +12,10 @@ public class Estudiante {
     private String fechaNacimiento;
     
     //Constructor con parametros
-
+    
     public Estudiante() {
     }
-    
+
     public Estudiante(String rut, String nombre, int edad, String fechaNacimiento) {
         this.rut = rut;
         this.nombre = nombre;
