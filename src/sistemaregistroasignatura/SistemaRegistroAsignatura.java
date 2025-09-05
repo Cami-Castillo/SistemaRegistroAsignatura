@@ -125,29 +125,36 @@ public class SistemaRegistroAsignatura {
 
         System.out.print("Ingrese nota 1: ");
         nota = leer.nextDouble();
-        leer.nextLine(); // limpiar buffer
+        //leer.nextLine(); // limpiar buffer
         asig1.setNota1(nota);
 
         System.out.print("Ingrese nota 2: ");
         nota = leer.nextDouble();
-        leer.nextLine(); // limpiar buffer
+        //leer.nextLine(); // limpiar buffer
         asig1.setNota2(nota);
 
         System.out.print("Ingrese nota 3: ");
         nota = leer.nextDouble();
-        leer.nextLine(); // limpiar buffer
+        //leer.nextLine(); // limpiar buffer
         asig1.setNota3(nota);
 
         System.out.print("Ingrese nota examen: ");
         nota = leer.nextDouble();
-        leer.nextLine(); // limpiar buffer
+        //leer.nextLine(); // limpiar buffer
         asig1.setNotaExamen(nota);
 
         break;
 
     case 4:
         // CALCULAR RESULTADOS
-        System.out.println("Nota de presentación de estudiante: ");
+        System.out.println("Nota de presentación de estudiante: " + asig1.notaPresentacion());
+        System.out.println("Nota Final: " + asig1.notaFinal(asig1.getNotaExamen()));
+        if (asig1.aprobado()){
+            System.out.println("Estudiante aprobado");
+        }
+        else{
+            System.out.println("Estudiante no aprobado");
+        }
         break;
 
     case 5:
@@ -165,6 +172,7 @@ public class SistemaRegistroAsignatura {
     }
     
 }
+
 
 
     
