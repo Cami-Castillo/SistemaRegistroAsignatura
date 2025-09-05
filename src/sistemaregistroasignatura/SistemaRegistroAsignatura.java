@@ -54,13 +54,25 @@ public class SistemaRegistroAsignatura {
         linea = leer.nextLine();
         estudiante1.setRut(linea);
 
-        System.out.print("Ingrese nombre del estudiante: ");
-        linea = leer.nextLine();
+        do {
+            System.out.print("Ingrese nombre del estudiante: ");
+            linea = leer.nextLine();
+            if (linea.equals("")) {
+                System.out.println("Error: El nombre no puede estar vacío.");
+            }
+        } while (linea.equals(""));  
+
         estudiante1.setNombre(linea);
 
-        System.out.print("Ingrese edad del estudiante: ");
-        numero = leer.nextInt();
-        leer.nextLine(); // limpiar buffer
+        do {
+            System.out.print("Ingrese edad del estudiante: ");
+            numero = leer.nextInt();
+            leer.nextLine(); // limpiar buffer
+            if (numero < 18 || numero >= 100) {
+                System.out.println("Error: La edad debe ser entre 18 y 99 años.");
+            }
+        } while (numero < 18 || numero >= 100);  // sigue preguntando mientras sea inválido
+
         estudiante1.setEdad(numero);
 
         System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
@@ -89,12 +101,25 @@ public class SistemaRegistroAsignatura {
         leer.nextLine(); // limpiar buffer
         docente1.setNroDocente(numero);
 
-        System.out.print("Ingrese nombre del docente: ");
-        linea = leer.nextLine();
+        do {
+            System.out.print("Ingrese nombre del docente: ");
+            linea = leer.nextLine();
+            if (linea.equals("")) {
+                System.out.println("Error: El nombre no puede estar vacío.");
+            }
+        } while (linea.equals(""));  
+
         docente1.nombreDocente(linea);
 
-        System.out.print("Ingrese fecha de ingreso (AAAA-MM-DD): ");
-        linea = leer.nextLine();
+        String fechaMax = "05/09/2025";  // fecha límite
+        do {
+            System.out.print("Ingrese fecha de ingreso del docente (dd/MM/yyyy): ");
+            linea = leer.nextLine();
+            if (linea.compareTo(fechaMax) > 0) {
+                System.out.println("Error: La fecha de ingreso no puede ser posterior a " + fechaMax);
+            }
+        } while (linea.compareTo(fechaMax) > 0);  // se repite mientras sea posterior
+
         docente1.setfechaIngreso(linea);
 
         System.out.print("Ingrese sede en la que trabaja: ");
@@ -173,8 +198,6 @@ public class SistemaRegistroAsignatura {
     }
     
 }
-
-
 
     
         
