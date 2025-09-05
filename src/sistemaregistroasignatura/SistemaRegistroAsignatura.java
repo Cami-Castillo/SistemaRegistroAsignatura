@@ -142,10 +142,6 @@ public class SistemaRegistroAsignatura {
         
     }
     
-}
 
     
-}while(opcion !=5);
-        leer.close();
-    }
         
