@@ -131,11 +131,11 @@ public class SistemaRegistroAsignatura {
     case 3:
         // INGRESO DE ASIGNATURA
         System.out.println("-- INGRESO DE ASIGNATURA --");
-
-        System.out.print("Ingrese el codigo unico de la asignatura: ");
-        numero = leer.nextInt();
         leer.nextLine(); // limpiar buffer
-        asig1.setCodigo(numero);
+        System.out.print("Ingrese el codigo unico de la asignatura: ");
+        linea = leer.nextLine();
+        
+        asig1.setCodigo(linea);
 
         System.out.print("Ingrese nombre de la asignatura: ");
         linea = leer.nextLine();
