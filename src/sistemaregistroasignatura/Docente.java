@@ -5,7 +5,7 @@ public class Docente {
   private String rut;
   private int nroDocente;
   private String fechaIngreso;
-  private String sede; // no se si sera tipo String o tipo Sede
+  private String sede; // 
   
   // Constructor
   
