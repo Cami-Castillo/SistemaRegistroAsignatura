@@ -12,7 +12,7 @@ public class Docente {
   public Docente() {
   }
 
-    public Docente(String nombreDocente, int rut, int nroDocente, String fechaIngreso) {
+    public Docente(String nombreDocente, String rut, int nroDocente, String fechaIngreso) {
         this.nombreDocente = nombreDocente;
         this.rut = rut;
         this.nroDocente = nroDocente;
@@ -24,7 +24,7 @@ public class Docente {
     return nombreDocente;
   }
 
-  public int getRut() {
+  public String getRut() {
     return rut;
   }
 
@@ -45,7 +45,7 @@ public class Docente {
     this.nombreDocente = nombreDocente;
   }
 
-  public void setRut(int rut) {
+  public void setRut(String rut) {
     this.rut = rut;
   }
 
