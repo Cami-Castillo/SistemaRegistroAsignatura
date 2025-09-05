@@ -1,9 +1,5 @@
 package sistemaregistroasignatura;
 
-/**
- *
- * @author aleja
- */
 public class Sede {
     //Atributo
     private String nroSede;
