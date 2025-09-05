@@ -1,22 +1,23 @@
 package sistemaregistroasignatura;
+
 public class Docente {
   private String nombreDocente;
   private int rut;
   private int nroDocente;
   private String fechaIngreso;
   private String sede; // no se si sera tipo String o tipo Sede
-
-  // Constructor
-  public Docente() {
-    }
-
   
-  public Docente(String nombreDocente, int rut, int nroDocente, String fechaIngreso) {
-    this.nombreDocente = nombreDocente;
-    this.rut = rut;
-    this.nroDocente = nroDocente;
-    this.fechaIngreso = fechaIngreso;
+  // Constructor
+  
+  public Docente() {
   }
+
+    public Docente(String nombreDocente, int rut, int nroDocente, String fechaIngreso) {
+        this.nombreDocente = nombreDocente;
+        this.rut = rut;
+        this.nroDocente = nroDocente;
+        this.fechaIngreso = fechaIngreso;
+    }
 
   // Getters
   public String getnombreDocente() {
