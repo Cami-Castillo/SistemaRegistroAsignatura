@@ -10,7 +10,7 @@ public class SistemaRegistroAsignatura {
         Scanner leer = new Scanner(System.in);
         int opcion;
         int numero;
-        String ingresar;
+        String linea;
         double nota;
         //Estudiante(String rut, String nombre, int edad, String fechaNacimiento)
 
@@ -44,110 +44,128 @@ public class SistemaRegistroAsignatura {
             opcion = leer.nextInt();
 
             switch(opcion){
-                case 1:
-                    //Falta objeto Estudiante?
-                    System.out.print("-- INGRESO DE ESTUDIANTE --");
-                    System.out.println("Ingrese RUT del estudiante: ");
-                    String rut = leer.nextLine();
-                    estudiante1.setRut(rut);
-                    
-                    //VALIDAR QUE NOMBRE NO ESTË VACIO
-                    
-                    System.out.print("Ingrese nombre del estudiante");
-                    String nombre= leer.nextLine();
-                    estudiante1.setNombre(nombre);
-                    
-                    System.out.print("Ingrese edad del estudiante: ");
-                    int edad = leer.nextInt();
-                    estudiante1.setEdad(edad);
-                    
-                    System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
-                    String fecha = leer.nextLine();
-                    estudiante1.setFechaNacimiento(fecha);
-                    System.out.println("------------------------------------");
-                    System.out.println("Estudiante ingresado con éxito");
-                    System.out.println("------------------------------------");
-                    System.out.print("RUT: "+estudiante1.getRut());
-                    System.out.print("Nombre: "+estudiante1.getNombre());
-                    System.out.print("Edad: "+estudiante1.getEdad());
-                    System.out.print("Fecha de nacimiento: "+estudiante1.getFechaNacimiento());
-                    break;
-                    
-                case 2:
-                    //considerar rut, nro_docente, nombre, fecha de ingreso y sede en la que trabaja (Se considera que puede impartir clases solo en una sede). De la Sede, se interesa almacenar el nro único de la sede, su nombre y comuna
-                    System.out.print("-- INGRESO DE DOCENTE --");
-                    System.out.println("Ingrese RUT del docente: ");
-                    numero = leer.nextInt();
-                    
-                    //VALIDAR QUE NOMBRE NO ESTË VACIO
-                    
-                    System.out.print("Ingrese numero del docente: ");
-                    numero = leer.nextInt();
-                    
-                    System.out.print("Ingrese nombre del docente: ");
-                    ingresar = leer.next();
-                    
-                    System.out.print("Ingrese fecha de ingreso (AAAA-MM-DD): ");
-                    ingresar = leer.next();
-                    //La fecha de ingreso del docente no puede ser posterior a hoy.
-                    
-                    System.out.println("Ingrese sede en la que trabaja: ");
-                    ingresar = leer.next();
+    case 1:
+        // INGRESO DE ESTUDIANTE
+        System.out.println("-- INGRESO DE ESTUDIANTE --");
 
-                    //se interesa almacenar el nro único de la sede, su nombre y comuna
+        System.out.print("Ingrese RUT del estudiante: ");
+        leer.nextLine(); // limpiar buffer antes de leer String
+        linea = leer.nextLine();
+        estudiante1.setRut(linea);
 
-                    
-                case 3:
+        System.out.print("Ingrese nombre del estudiante: ");
+        linea = leer.nextLine();
+        estudiante1.setNombre(linea);
 
-                    System.out.print("-- INGRESO DE ASIGNATURA --");
-                    System.out.println("Ingrese el codigo unico de la asignatura: ");
-                    numero = leer.nextInt();
-                    
-                    System.out.print("Ingrese nombre de la asignatura: ");
-                    ingresar = leer.next();
-                    
-                    System.out.print("Ingrese nombre del estudiante: ");
-                    ingresar = leer.next();
-                    //VALIDACION?
-                    
-                    System.out.print("Docente que imparte la asignatura: ");
-                    ingresar = leer.next();
-                    
-                    System.out.println("Ingrese sede en la que trabaja: ");
-                    ingresar = leer.next();
+        System.out.print("Ingrese edad del estudiante: ");
+        numero = leer.nextInt();
+        leer.nextLine(); // limpiar buffer
+        estudiante1.setEdad(numero);
 
-                    System.out.print("Ingrese nota 1: ");
-                    nota = leer.nextDouble();  
-                    System.out.print("Ingrese nota 2: ");
-                    nota = leer.nextDouble();    
-                    System.out.print("Ingrese nota 3: ");
-                    nota = leer.nextDouble();    
+        System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
+        linea = leer.nextLine();
+        estudiante1.setFechaNacimiento(linea);
 
-                    
+        System.out.println("Estudiante ingresado con éxito");
+        System.out.println("------------------------------------");
+        System.out.println("RUT: "+estudiante1.getRut());
+        System.out.println("Nombre: "+estudiante1.getNombre());
+        System.out.println("Edad: "+estudiante1.getEdad());
+        System.out.println("Fecha de nacimiento: "+estudiante1.getFechaNacimiento());
+        break;
 
-                    
-                case 4: 
-                    //llamar metodo
-                    System.out.println("Nota de presentacion de estudiante: ");
+    case 2:
+        // INGRESO DE DOCENTE
+        System.out.println("-- INGRESO DE DOCENTE --");
 
-                    System.out.println("Ingrese la nota final del estudiante: ");
-                    
-                case 5:
-                    System.out.println("Saliendo del sistema...");
-                default:
-                    System.out.println("Error: Ingrese una opción válida.");
-                    
+        leer.nextLine(); // limpiar buffer antes de leer String
+        System.out.print("Ingrese RUT del docente: ");
+        linea = leer.nextLine();
+        docente1.setRut(linea);
 
-                    
-        
-    }
+        System.out.print("Ingrese numero del docente: ");
+        numero = leer.nextInt();
+        leer.nextLine(); // limpiar buffer
+        docente1.setNroDocente(numero);
+
+        System.out.print("Ingrese nombre del docente: ");
+        linea = leer.nextLine();
+        docente1.nombreDocente(linea);
+
+        System.out.print("Ingrese fecha de ingreso (AAAA-MM-DD): ");
+        linea = leer.nextLine();
+        docente1.setfechaIngreso(linea);
+
+        System.out.print("Ingrese sede en la que trabaja: ");
+        linea = leer.nextLine();
+        docente1.setSede(linea);
+
+        break;
+
+    case 3:
+        // INGRESO DE ASIGNATURA
+        System.out.println("-- INGRESO DE ASIGNATURA --");
+
+        System.out.print("Ingrese el codigo unico de la asignatura: ");
+        numero = leer.nextInt();
+        leer.nextLine(); // limpiar buffer
+        asig1.setCodigo(numero);
+
+        System.out.print("Ingrese nombre de la asignatura: ");
+        linea = leer.nextLine();
+        asig1.setNombreAsignatura(linea);
+
+        System.out.print("Ingrese nombre del estudiante: ");
+        linea = leer.nextLine();
+        asig1.setNombreEstudiante(linea);
+
+        System.out.print("Docente que imparte la asignatura: ");
+        linea = leer.nextLine();
+        asig1.setNombreProfesor(linea);
+
+        System.out.print("Ingrese nota 1: ");
+        nota = leer.nextDouble();
+        leer.nextLine(); // limpiar buffer
+        asig1.setNota1(nota);
+
+        System.out.print("Ingrese nota 2: ");
+        nota = leer.nextDouble();
+        leer.nextLine(); // limpiar buffer
+        asig1.setNota2(nota);
+
+        System.out.print("Ingrese nota 3: ");
+        nota = leer.nextDouble();
+        leer.nextLine(); // limpiar buffer
+        asig1.setNota3(nota);
+
+        System.out.print("Ingrese nota examen: ");
+        nota = leer.nextDouble();
+        leer.nextLine(); // limpiar buffer
+        asig1.setNotaExamen(nota);
+
+        break;
+
+    case 4:
+        // CALCULAR RESULTADOS
+        System.out.println("Nota de presentación de estudiante: ");
+        break;
+
+    case 5:
+        System.out.println("Saliendo del sistema...");
+        break;
+
+    default:
+        System.out.println("Error: Ingrese una opción válida.");
+        break;
+}
     
 }while(opcion !=5);
         leer.close();
         
     }
-}
     
+}
+
 
     
         
