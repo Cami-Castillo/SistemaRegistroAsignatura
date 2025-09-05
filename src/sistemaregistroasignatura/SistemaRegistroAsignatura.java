@@ -1,16 +1,10 @@
-
 package sistemaregistroasignatura;
-
 import java.util.Scanner;
-/**
- *
- * @author clcas
- */
-public class SistemaRegistroAsignatura {
 
-    /**
-     * @param args the command line arguments
-     */
+public class SistemaRegistroAsignatura {
+        //Asignatura asignatura1 = new Asignatura("POO", 1, "Pepito", "Pepito2", 7.0, 4.0, 7.0);
+        //double notaEje = asignatura1.notaPresentacion();
+        //System.out.println("Nota presentacion " + notaEje);
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner leer = new Scanner(System.in);
@@ -18,31 +12,28 @@ public class SistemaRegistroAsignatura {
         int numero;
         String ingresar;
         double nota;
-
         //Estudiante(String rut, String nombre, int edad, String fechaNacimiento)
 
-        Estudiante alumno = new Estudiante();
-        Estudiante alumno1 = new Estudiante();
+        Estudiante estudiante1 = new Estudiante();
+        Estudiante estudiante2 = new Estudiante();
 
         //Docente(String nombreDocente, int rut, int nroDocente, String fechaIngreso)
 
-        Docente profesor = new Docente();
-        Docente profesor1 = new Docente();
+        Docente docente1 = new Docente();
+        Docente docente2 = new Docente();
 
         //Asignatura(String nombreAsignatura, int codigo, String nombreEstudiante, String nombreProfesor, double nota1, double nota2, double nota3)
 
-        Asignatura asig = new Asignatura();
         Asignatura asig1 = new Asignatura();
+        Asignatura asig2 = new Asignatura();
 
         //Sede(String nroSede, String nombre, String comuna)
 
         Sede sede1 = new Sede();
         Sede sede2 = new Sede();
-
         
-
         do{
-            System.out.println("------------------------")
+            System.out.println("------------------------");
             System.out.println(" SISTEMA DE REGISTRO");
             System.out.println("------------------------");
             System.out.println("1.- Ingresar Estudiante ");
@@ -57,20 +48,25 @@ public class SistemaRegistroAsignatura {
                     //Falta objeto Estudiante?
                     System.out.print("-- INGRESO DE ESTUDIANTE --");
                     System.out.println("Ingrese RUT del estudiante: ");
-                    numero = leer.nextInt();
-
+                    String rut = leer.nextLine();
+                    estudiante1.setRut(rut);
+                    
                     //VALIDAR QUE NOMBRE NO ESTË VACIO
                     
                     System.out.print("Ingrese nombre del estudiante");
-                    ingresar = leer.next();
+                    String nombre= leer.nextLine();
+                    estudiante1.setNombre(nombre);
                     
                     System.out.print("Ingrese edad del estudiante: ");
-                    numero = leer.nextInt();
+                    int edad = leer.nextInt();
+                    estudiante1.setEdad(edad);
                     
                     System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
-                    ingresar = leer.next();
+                    String fecha = leer.nextLine();
+                    estudiante1.setFechaNacimiento(fecha);
                     
                     System.out.println("Estudiante ingresado con éxito");
+                    break;
                     
                 case 2:
                     //considerar rut, nro_docente, nombre, fecha de ingreso y sede en la que trabaja (Se considera que puede impartir clases solo en una sede). De la Sede, se interesa almacenar el nro único de la sede, su nombre y comuna
@@ -117,9 +113,9 @@ public class SistemaRegistroAsignatura {
 
                     System.out.print("Ingrese nota 1: ");
                     nota = leer.nextDouble();  
-                     System.out.print("Ingrese nota 2: ");
+                    System.out.print("Ingrese nota 2: ");
                     nota = leer.nextDouble();    
-                     System.out.print("Ingrese nota 3: ");
+                    System.out.print("Ingrese nota 3: ");
                     nota = leer.nextDouble();    
 
                     
@@ -129,10 +125,10 @@ public class SistemaRegistroAsignatura {
                     //llamar metodo
                     System.out.println("Nota de presentacion de estudiante: ");
 
-                    System.out.pritnln("Ingrese la nota final del estudiante: ");
+                    System.out.println("Ingrese la nota final del estudiante: ");
                     
                 case 5:
-                    Sytem.out.println("Saliendo del sistema...");
+                    System.out.println("Saliendo del sistema...");
                 default:
                     System.out.println("Error: Ingrese una opción válida.");
                     
@@ -140,6 +136,14 @@ public class SistemaRegistroAsignatura {
                     
         
     }
+    
+}while(opcion !=5);
+        leer.close();
+        
+    }
+    
+}
+
     
 }while(opcion !=5);
         leer.close();
