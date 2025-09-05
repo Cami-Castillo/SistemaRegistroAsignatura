@@ -2,11 +2,9 @@ package sistemaregistroasignatura;
 import java.util.Scanner;
 
 public class SistemaRegistroAsignatura {
-        //Asignatura asignatura1 = new Asignatura("POO", 1, "Pepito", "Pepito2", 7.0, 4.0, 7.0);
-        //double notaEje = asignatura1.notaPresentacion();
-        //System.out.println("Nota presentacion " + notaEje);
     public static void main(String[] args) {
         // TODO code application logic here
+            
         Scanner leer = new Scanner(System.in);
         int opcion;
         int numero;
@@ -75,7 +73,7 @@ public class SistemaRegistroAsignatura {
 
         estudiante1.setEdad(numero);
 
-        System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
+        System.out.print("Ingrese fecha de nacimiento (dd/mm/aa): ");
         linea = leer.nextLine();
         estudiante1.setFechaNacimiento(linea);
 
