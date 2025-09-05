@@ -41,6 +41,7 @@ public class SistemaRegistroAsignatura {
             System.out.println("3.- Ingresar Asignatura");
             System.out.println("4.- Calcular Resultados");
             System.out.println("5.- Salir");
+            System.out.println("Ingrese una opcion: ");
             opcion = leer.nextInt();
 
             switch(opcion){
