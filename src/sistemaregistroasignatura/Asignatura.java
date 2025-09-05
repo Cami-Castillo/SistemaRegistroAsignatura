@@ -54,6 +54,10 @@ public class Asignatura {
     return nota3;
   }
 
+    public double getNotaExamen() {
+        return notaExamen;
+    }
+
   // Setters
   public void setNombreAsignatura(String nombreAsignatura) {
     this.nombreAsignatura = nombreAsignatura;
@@ -76,12 +80,18 @@ public class Asignatura {
   }
 
   public void setNota2(double nota2) {
-    this.nota1 = nota2;
+    this.nota2 = nota2;
   }
 
   public void setNota3(double nota3) {
-    this.nota1 = nota3;
+    this.nota3 = nota3;
   }
+
+  public void setNotaExamen(double notaExamen) {
+    this.notaExamen = notaExamen;
+  }
+  
+  
 
   // Metodos de la clase
   
