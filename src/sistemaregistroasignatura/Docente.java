@@ -7,6 +7,10 @@ public class Docente {
   private String sede; // no se si sera tipo String o tipo Sede
 
   // Constructor
+  public Docente() {
+    }
+
+  
   public Docente(String nombreDocente, int rut, int nroDocente, String fechaIngreso) {
     this.nombreDocente = nombreDocente;
     this.rut = rut;
