@@ -34,6 +34,11 @@ public class SistemaRegistroAsignatura {
         Asignatura asig = new Asignatura();
         Asignatura asig1 = new Asignatura();
 
+        //Sede(String nroSede, String nombre, String comuna)
+
+        Sede sede1 = new Sede();
+        Sede sede2 = new Sede();
+
         
 
         do{
